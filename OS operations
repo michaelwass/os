@@ -1,0 +1,21 @@
+# Python 3.10.3
+import pathlib
+#from pathlib import Path
+home = Path.home()
+home
+# gives your home directory path
+
+my_folder = home / "my_folder"
+my_folder
+
+#Create path
+my_folder.mkdir()
+
+#Check folder
+my_folder.exists()
+
+#create file
+file1 = my_folder / "file1.txt"
+file1.touch()
+(my_folder / "file2.txt").touch()
+my_folder.jointpath("image1.png").touch()
